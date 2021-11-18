@@ -33,6 +33,26 @@ const classImg = document.querySelector('.big-img');
 const classImgSmall = document.querySelector('.small-img');
 const classText = document.querySelector('.text');
 
+for(let i = 0; i < items.length; i++){
+
+    //Popolo il contenitore di testo
+    const thisTitle = title[i];
+    const thisText = text[i];
+    
+    const newText = `
+        
+    <div>
+    
+        <h2 class="single-title">${thisTitle}</h2>
+        <span class="single-text">${thisText}</span>
+
+    </div>
+    
+    `;
+    
+    classText.innerHTML += newText;
+
+}
 
 //Per ogni elemento di items popolo il container
 for( let i = 0; i < items.length; i++ ){
@@ -57,27 +77,6 @@ for( let i = 0; i < items.length; i++ ){
 
 }
 
-
-for(let i = 0; i < items.length; i++){
-
-    //Popolo il contenitore di testo
-    const thisTitle = title[i];
-    const thisText = text[i];
-    
-    const newText = `
-        
-    <div>
-    
-        <h2 class="single-title">${thisTitle}</h2>
-        <span class="single-text">${thisText}</span>
-
-    </div>
-    
-    `;
-    
-    classText.innerHTML += newText;
-
-}
 
 // Assegno la classe active ad un elemento
 let active = 0;

@@ -53,11 +53,11 @@
 }
 
 .text h2, .text span{
-    opacity: 0;
+    display: none;
 }
 
 .text .active{
-    opacity: 1;
+    display: block;
 }
 
 /* Parte destra dove ci saranno le immagini piccole e le interazioni */
